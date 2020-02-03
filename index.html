@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper and Scissors</title>
+</head>
+<body>
+    
+
+
+    <div class="navbar navbar-fixed-top">
+        <a class="navbar-brand" id="logo" href="#"><img id="profile-img" src="img/profile.jpg" class="img-fluid" alt=""></a>
+        <a class="navbar-brand" id="me" href="#">About me</a>
+        <a class="navbar-brand" id="projects" href="#">My Projects</a>
+        <a class="navbar-brand" id="contact" href="#">Contact</a>
+    </div>
+
+    <header>
+
+        <h1 class="text-center mt-4 play">Play Rock, Paper and Scissors!</h1>
+        <h3 class="text-center mt-5 play">  Show us what you got!  </h3>
+
+    </header>
+
+   
+
+        <body>
+            <div class="grid">
+              <div class="item text-center grow"><img class="options img-fluid" src="img/paper.png" alt="paper" onclick="game('paper')"></div>
+              <div class="item text-center grow"><img class="options img-fluid" src="img/scissors.png" alt="scissors" onclick="game('scissors')"></div>
+              <div class="item text-center grow"><img class="options img-fluid" src="img/rock.png" alt="rock" onclick="game('rock')"></div>
+              <div class="item text-center mt-2 nice">paper</div>
+              <div class="item text-center mt-2 nice">scissors</div>
+              <div class="item text-center mt-2 nice">rock!</div>
+
+              <div class="item text-center" id="computerpick">
+                <!-- <img id="left-scissors" src="img/left-scissors.png" alt="">
+                <img id="left-rock" src="img/left-rock.png" alt="">
+                <img id="left-paper" src="img/left-paper.png" alt=""> -->
+              </div>
+
+              <div class="item text-center">
+
+                <p id="score">
+                  <div class="row">
+                    <div class="col text-primary">Computer</div>
+                    <div class="col"></div>
+                    <div id="playername" class="col text-primary">You</div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col" id="computerscore">0</div>
+                    <div class="col" id="winorlose">-</div>
+                    <div class="col" id="playerscore">0</div>
+                  </div>
+
+                </p>
+                <button onclick="reset()">Reset</button>
+              </div>
+
+
+              <div class="item text-center" id="playerpick">
+                <!-- <img id="right-scissors" src="img/right-scissors.png" alt="">
+                <img id="right-rock" src="img/right-rock.png" alt="">
+                <img id="right-paper" src="img/right-paper.png" alt=""> -->
+              </div>
+            </div>
+
+            
+
+    <script src="script.js"></script>
+</body>
+</html>
